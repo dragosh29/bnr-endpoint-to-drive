@@ -1,0 +1,13 @@
+<h1>Configure Currency</h1>
+
+<%= form_tag '/currencies/configure', method: :post do %>
+  <div class="field">
+    <%= label_tag :currency %>
+    <%= text_field_tag :currency %>
+  </div>
+  <div class="field">
+    <%= label_tag :enable %>
+    <%= check_box_tag :enable, true %>
+  </div>
+  <%= submit_tag 'Configure Currency' %>
+<% end %>
